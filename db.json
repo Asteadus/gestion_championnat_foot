@@ -1,0 +1,12 @@
+{
+    "clubs": [
+      {
+        "id": 1,
+        "nom": "RSC Anderlecht",
+        "pays": "Belgique",
+        "nomPresident": "Wouter Vandenhaute",
+        "nomStade": "Lotto Park",
+        "dateCreation": "1908-05-27"
+      }
+    ]
+  }

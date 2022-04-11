@@ -1,0 +1,26 @@
+<p>Affichage des clubs</p>
+
+<div>
+    <table>
+        <h3>Liste des clubs</h3>
+            <tr>
+                <th>Nom</th>
+                <th>Pays</th>
+                <th>Date création</th>
+                <th>Nom de stade</th>
+                <th>Détails</th>
+            </tr>
+        
+            <ng-container  *ngFor="let club of listClub" >
+                <tr>
+                    <td>{{club.nom }} </td>
+                    <td>{{club.pays }} </td>
+                    <td>{{club.dateCreation }} </td>
+                    <td>{{club.nomStade }} </td>
+                    <td><button (click)="onDetails(club)" >Voir détails</button></td>
+
+                   
+                </tr>
+            </ng-container>
+        </table>
+</div>

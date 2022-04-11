@@ -1,0 +1,22 @@
+<ng-template #loading>
+    <div>
+        <p>loading...</p>
+    </div>
+</ng-template>
+<div *ngIf="club; else loading">
+    <h3>Détail du club d'id: {{club.id}}</h3>
+    <dl>
+        <dt>Nom du club</dt>
+        <dd>{{club.nom}}</dd>
+        <dt>Pays</dt>
+        <dd>{{club.pays}}</dd>
+        <dt>Nom président</dt>
+        <dd>{{club.nomPresident}}</dd>
+        <dt>Nom du stade</dt>
+        <dd>{{club.nomStade}}</dd>
+        <dt>Date de création</dt>
+        <dd>{{club.dateCreation}}</dd>
+    
+    </dl>
+
+</div>
