@@ -1,0 +1,22 @@
+<ng-template #loading>
+    <div>
+        <p>loading...</p>
+    </div>
+</ng-template>
+<div *ngIf="championnat; else loading">
+    <h3>Détail du club d'id: {{championnat.id}}</h3>
+    <dl>
+        <dt>Nom du championnat</dt>
+        <dd>{{championnat.nom}}</dd>
+        <dt>Pays</dt>
+        <dd>{{championnat.pays}}</dd>
+        <dt>Saison</dt>
+        <dd>{{championnat.saison}}</dd>
+        <dt>Nombre d'équipes maximum</dt>
+        <dd>{{championnat.nbEquipes}}</dd>
+    
+    </dl>
+
+</div>
+
+<h3>Equipes participantes: </h3>

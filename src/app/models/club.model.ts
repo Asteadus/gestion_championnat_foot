@@ -1,3 +1,5 @@
+import { Championnat } from "./championnat.model";
+
 export interface Club {
     id?: number,
     nom: string,
@@ -5,4 +7,5 @@ export interface Club {
     nomPresident: string,
     nomStade: string,
     dateCreation: Date,
+    championnat: Championnat
 }

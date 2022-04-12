@@ -1,0 +1,25 @@
+
+<div>
+    <table>
+        <h3>Liste des championnats</h3>
+            <tr>
+                <th>Nom</th>
+                <th>Pays</th>
+                <th>Saison</th>
+                <th>Nombre d'équipes max</th>
+
+            </tr>
+        
+            <ng-container  *ngFor="let championnat of listChampionnats" >
+                <tr>
+                    <td>{{championnat.nom }} </td>
+                    <td>{{championnat.pays }} </td>
+                    <td>{{championnat.saison }} </td>
+                    <td>{{championnat.nbEquipes }} </td>
+                    <td><button (click)="onDetails(championnat)" >Voir détails</button></td>
+
+                   
+                </tr>
+            </ng-container>
+        </table>
+</div>

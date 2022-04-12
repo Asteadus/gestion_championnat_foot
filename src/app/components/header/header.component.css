@@ -1,0 +1,17 @@
+.nav {
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	top: 0;
+    background: #42A5F5;
+}
+
+.nav-title{
+    margin: 0px 30px;
+}
+.nav-link{
+    display: inline-block;
+		margin: 0px 20px;
+}

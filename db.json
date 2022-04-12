@@ -6,7 +6,38 @@
         "pays": "Belgique",
         "nomPresident": "Wouter Vandenhaute",
         "nomStade": "Lotto Park",
-        "dateCreation": "1908-05-27"
+        "dateCreation": "1908-05-27",
+        "championnat": {
+            
+
+        }
+      },
+      {
+        "id": 2,
+        "nom": "Standard de Liège",
+        "pays": "Belgique",
+        "nomPresident": "Poste Vacant",
+        "nomStade": "Stade Maurice-Dufrasne",
+        "dateCreation": "1898",
+        "championnat": {
+            "id": 1,
+            "nom": "Jupiler pro League",
+            "saison": "2021-2022",
+            "nbEquipes": 18,
+            "pays": "Belgique"
+
+        }
       }
+
+    ],
+    "championnats":[
+        {
+            "id": 1,
+            "nom": "Jupiler pro League",
+            "saison": "2021-2022",
+            "nbEquipes": 18,
+            "pays": "Belgique"
+
+        }
     ]
   }

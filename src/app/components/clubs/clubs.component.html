@@ -1,4 +1,3 @@
-<p>Affichage des clubs</p>
 
 <div>
     <table>
@@ -8,6 +7,7 @@
                 <th>Pays</th>
                 <th>Date création</th>
                 <th>Nom de stade</th>
+                <th>championnat</th>
                 <th>Détails</th>
             </tr>
         
@@ -17,6 +17,7 @@
                     <td>{{club.pays }} </td>
                     <td>{{club.dateCreation }} </td>
                     <td>{{club.nomStade }} </td>
+                    <td><button (click)="onDetailsChampionnat(club)" >{{club.championnat.nom }}</button> </td>
                     <td><button (click)="onDetails(club)" >Voir détails</button></td>
 
                    
