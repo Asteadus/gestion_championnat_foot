@@ -1,0 +1,20 @@
+
+<h3>Rencontres</h3>
+
+<div class="row">
+        
+        <div class="col-5">
+            <ul *ngFor="let rencontre of listRencontres" id="list">
+                <li> 
+                    {{rencontre.clubDomicile.nom}} {{rencontre.scoreDomicile}} - 
+                    {{rencontre.scoreVisiteur}} {{rencontre.clubVisiteur.nom}}
+                    
+                    <button  routerLink="/rencontre/update/{{rencontre.id}}">Modifier</button>
+                </li>
+            </ul>
+        </div>
+        <div class="col-5">
+            <router-outlet ></router-outlet>
+           
+        </div>
+</div>

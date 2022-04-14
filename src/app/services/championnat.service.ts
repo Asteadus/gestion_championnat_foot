@@ -7,8 +7,8 @@ import { Championnat } from '../models/championnat.model';
 })
 export class ChampionnatService {
 
-  //private readonly BASE_URL = "http://localhost:8080/championnat";
-  private readonly BASE_URL = "http://localhost:3000/championnats";
+  private readonly BASE_URL = "http://localhost:8080/championnat";
+ // private readonly BASE_URL = "http://localhost:3000/championnats";
   
 
   constructor(private client: HttpClient) { }

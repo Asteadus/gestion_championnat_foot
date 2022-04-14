@@ -1,0 +1,13 @@
+<ng-template #loading>
+    <div>
+        <p>loading...</p>
+    </div>
+</ng-template>
+<div *ngIf="rencontre; else loading">
+    <h3>Détail du rencontre d'id: {{rencontre.id}}</h3>
+    <li> 
+        {{rencontre.clubDomicile.nom}} {{rencontre.scoreDomicile}} - 
+        {{rencontre.scoreVisiteur}} {{rencontre.clubVisiteur.nom}} 
+    </li>
+
+</div>

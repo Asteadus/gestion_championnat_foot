@@ -1,17 +1,17 @@
-.nav {
-	position: sticky;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 60px;
-	top: 0;
-    background: #42A5F5;
+
+header{
+    background-color: #577399;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 
-.nav-title{
-    margin: 0px 30px;
+
+.nav-align{
+    display:flex;
+    justify-content: right;
+    flex: 1 1 auto;
+    
 }
-.nav-link{
-    display: inline-block;
-		margin: 0px 20px;
-}
+

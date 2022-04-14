@@ -2,12 +2,12 @@ import { Club } from "./club.model";
 import { Journee } from "./journee.model";
 
 export interface Rencontre{
-    id?: number,
+    id: number,
     date: Date,
-    score_domicile : number,
-    score_visiteur: number,
-    club_domicile: Club,
-    club_visite: Club,
+    scoreDomicile : number,
+    scoreVisiteur: number,
+    clubDomicile: Club,
+    clubVisiteur: Club,
     journee: Journee
     
 

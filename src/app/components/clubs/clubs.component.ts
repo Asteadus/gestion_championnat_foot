@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
-import { Championnat } from 'src/app/models/championnat.model';
+
 import { Club } from 'src/app/models/club.model';
 import { ChampionnatService } from 'src/app/services/championnat.service';
 import { ClubService } from 'src/app/services/club.service';
@@ -13,9 +13,9 @@ import { ClubService } from 'src/app/services/club.service';
 export class ClubsComponent implements OnInit {
 
   listClub !: Club[];
-  championnat !: Championnat;
 
-  constructor(private clubService: ClubService, private championnatService: ChampionnatService, private router: Router) { 
+
+  constructor(private clubService: ClubService,  private router: Router) { 
     this.getClubs()
     
   

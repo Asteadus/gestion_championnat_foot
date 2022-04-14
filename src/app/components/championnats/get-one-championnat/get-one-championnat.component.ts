@@ -13,12 +13,14 @@ export class GetOneChampionnatComponent implements OnInit {
   id : number;
   championnat !: Championnat;
 
+
   constructor(route : ActivatedRoute, private service : ChampionnatService, private router: Router ) {
     const param_id = route.snapshot.paramMap.get("id")
     this.id = param_id? parseInt(param_id) : -1 ;
 
     if(this.id && this.id > 0)
       service.getChampionnat(this.id).subscribe({
+
         next : (championnat)=>this.championnat = championnat,
         error: (err) => router.navigateByUrl("/")
       });

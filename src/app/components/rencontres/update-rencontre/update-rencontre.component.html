@@ -1,0 +1,27 @@
+<p>Insérer un score </p>
+
+
+<form [formGroup]="rencontreForm" (ngSubmit)="onSubmit()" *ngIf="rencontre">
+
+    <div>
+        <p>Rencontre : {{rencontre.clubDomicile.nom}} - {{rencontre.clubVisiteur.nom}} </p>
+    </div>
+
+       
+        <h3>Score</h3>
+        
+            <label for="input-scoreDomicile" class="form-label">{{rencontre.clubDomicile.nom}} </label>
+            <input  type="number" min="0" class="form-control" id="input-scoreDomicile" formControlName="scoreDomicile">
+ 
+            
+      
+            <label for="input-scoreVisiteur" class="form-label">{{rencontre.clubVisiteur.nom}}</label>
+            <input type="number" min="0" class="form-control" id="input-scoreVisiteur" formControlName="scoreVisiteur">
+       
+   
+      <div class="btn-rack btn-group">
+        <button type="submit">modifier</button>
+    
+      </div>
+
+</form>

@@ -7,8 +7,8 @@ import { Club } from '../models/club.model';
 })
 export class ClubService {
 
-  private readonly BASE_URL = "http://localhost:3000/clubs";
-  //private readonly BASE_URL = "http://localhost:8080/club";
+  //private readonly BASE_URL = "http://localhost:3000/clubs";
+  private readonly BASE_URL = "http://localhost:8080/club";
   constructor(private client: HttpClient) { }
 
   // GET 

@@ -36,8 +36,65 @@
             "nom": "Jupiler pro League",
             "saison": "2021-2022",
             "nbEquipes": 18,
-            "pays": "Belgique"
+            "pays": "Belgique",
+            "clubs": [
+                {
+                  "id": 1,
+                  "nom": "RSC Anderlecht",
+                  "pays": "Belgique",
+                  "nomPresident": "Wouter Vandenhaute",
+                  "nomStade": "Lotto Park",
+                  "dateCreation": "1908-05-27"
+                },{
+                    "id": 2,
+                    "nom": "Standard de Liège",
+                    "pays": "Belgique",
+                    "nomPresident": "Poste Vacant",
+                    "nomStade": "Stade Maurice-Dufrasne",
+                    "dateCreation": "1898"
+                }
+                ]
 
+
+        }
+    ],
+    "rencontres": [
+        {
+            "id":1,
+            "date": "15-04-2022h15:00",
+            "score_domicile": 2,
+            "score_visiteur": 1,
+            "club_domicile" : {
+                "id": 1,
+                  "nom": "RSC Anderlecht",
+                  "pays": "Belgique",
+                  "nomPresident": "Wouter Vandenhaute",
+                  "nomStade": "Lotto Park",
+                  "dateCreation": "1908-05-27"
+            },
+            "club_visiteur":{
+                "id": 2,
+                    "nom": "Standard de Liège",
+                    "pays": "Belgique",
+                    "nomPresident": "Poste Vacant",
+                    "nomStade": "Stade Maurice-Dufrasne",
+                    "dateCreation": "1898"
+            },
+            "journee":{
+                "id": 1,
+                "numero": 1,
+                "date_debut": "15-04-2022",
+                "date_fin": "18-04-2022",
+                "championnat": {
+                    "id": 1,
+                    "nom": "Jupiler pro League",
+                    "saison": "2021-2022",
+                    "nbEquipes": 18,
+                    "pays": "Belgique"
+        
+                }
+
+            }
         }
     ]
   }

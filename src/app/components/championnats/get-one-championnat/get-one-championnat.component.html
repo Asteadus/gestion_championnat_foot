@@ -4,19 +4,33 @@
     </div>
 </ng-template>
 <div *ngIf="championnat; else loading">
-    <h3>Détail du club d'id: {{championnat.id}}</h3>
-    <dl>
-        <dt>Nom du championnat</dt>
-        <dd>{{championnat.nom}}</dd>
-        <dt>Pays</dt>
-        <dd>{{championnat.pays}}</dd>
-        <dt>Saison</dt>
-        <dd>{{championnat.saison}}</dd>
-        <dt>Nombre d'équipes maximum</dt>
-        <dd>{{championnat.nbEquipes}}</dd>
+    <h3>{{championnat.nom}} - {{championnat.pays}}</h3>
+    <h4 class="saison">{{championnat.saison}}</h4>
+
+
+
+
+<h3>Equipes participantes: {{championnat.nbEquipes}} </h3>
+<table >
+        <tr>
+            <th>Nom</th>
+            <th>Date création</th>
+            <th>Nom de stade</th>
+
+        </tr>
     
-    </dl>
+        <ng-container  *ngFor="let club of championnat.clubs!" >
+            <tr>
+                <td>{{club.nom }} </td>
+                <td>{{club.dateCreation }} </td>
+                <td>{{club.nomStade }} </td>
+
+            </tr>
+        </ng-container>
+    </table>
+
+
 
 </div>
 
-<h3>Equipes participantes: </h3>
+<h4>Classement</h4>
