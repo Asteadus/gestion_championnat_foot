@@ -1,0 +1,45 @@
+
+
+<ng-template #loading>
+    <div>
+        <p>loading...</p>
+    </div>
+</ng-template>
+<div *ngIf="listClassement; else loading" class="row" >
+
+    <div class="col-3"></div>
+    <div class="table-responsive col-6" >
+    <table class="table table-striped table-primary table-hover table-sm">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Équipe</th>
+                    <th scope="col">Pts</th>
+                    <th scope="col">MJ</th>
+                    <th scope="col">V</th>
+                    <th scope="col">N</th>
+                    <th scope="col">D</th>
+                    <th scope="col">DB</th>
+                    
+
+                </tr>
+            </thead>
+            <tbody class="tbody-light">
+            <ng-container  *ngFor="let classement of listClassement, let i = index" >
+                <tr scope ="row">
+                    <th >{{i+1}} </th>
+                    <td><a routerLink="/club/{{classement.idClub}}">{{classement.nomClub}}</a></td>
+                    <td>{{classement.points}} </td>
+                    <td>{{classement.matchJoue }} </td>
+                    <td>{{classement.victoire }} </td>
+                    <td>{{classement.nul }} </td>
+                    <td>{{classement.defaite }} </td>
+                    <td>{{classement.diffBut }} </td>
+
+                   
+                </tr>
+            </ng-container>
+        </tbody>
+        </table>
+    </div>
+</div>

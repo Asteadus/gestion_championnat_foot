@@ -43,7 +43,7 @@ export class ClubsComponent implements OnInit {
   }
 
   onDetailsChampionnat(club: Club){
-
+    
     this.router.navigate(["championnat/", club.championnat.id])
   }
 

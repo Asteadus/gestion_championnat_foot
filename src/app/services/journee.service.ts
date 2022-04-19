@@ -12,11 +12,11 @@ export class JourneeService {
   constructor(private client: HttpClient) { }
 
   // GET 
-  getRencontres(){
+  getJournees(){
     return this.client.get<Journee[]>(this.BASE_URL)
     
   }
-  getRencontre(id : number){
+  getJournee(id : number){
     return this.client.get<Journee>(this.BASE_URL + "/"+id)
 
   }

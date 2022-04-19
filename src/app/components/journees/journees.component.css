@@ -1,0 +1,9 @@
+th, td{
+    border:none;
+}
+
+#score{
+    background-color: #007bff;
+    padding: 5px;
+    color: white;
+}

@@ -10,27 +10,8 @@
 
 
 
-<h3>Equipes participantes: {{championnat.nbEquipes}} </h3>
-<table >
-        <tr>
-            <th>Nom</th>
-            <th>Date création</th>
-            <th>Nom de stade</th>
-
-        </tr>
-    
-        <ng-container  *ngFor="let club of championnat.clubs!" >
-            <tr>
-                <td>{{club.nom }} </td>
-                <td>{{club.dateCreation }} </td>
-                <td>{{club.nomStade }} </td>
-
-            </tr>
-        </ng-container>
-    </table>
-
-
-
 </div>
 
 <h4>Classement</h4>
+
+<app-get-one-classement></app-get-one-classement>

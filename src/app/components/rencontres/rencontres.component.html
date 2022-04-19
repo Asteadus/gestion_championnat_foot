@@ -9,12 +9,16 @@
                     {{rencontre.clubDomicile.nom}} {{rencontre.scoreDomicile}} - 
                     {{rencontre.scoreVisiteur}} {{rencontre.clubVisiteur.nom}}
                     
-                    <button  routerLink="/rencontre/update/{{rencontre.id}}">Modifier</button>
+                    <button  class="btn btn-primary" routerLink="/rencontre/update/{{rencontre.id}}">Modifier</button>
                 </li>
             </ul>
         </div>
         <div class="col-5">
-            <router-outlet ></router-outlet>
+            <router-outlet></router-outlet>
            
         </div>
+
+
 </div>
+
+

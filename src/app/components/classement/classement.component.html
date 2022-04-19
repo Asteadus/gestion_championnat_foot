@@ -1,0 +1,38 @@
+
+<div >
+    <h3>Classement</h3>
+    <div class="table-responsive">
+    <table class="table table-striped table-primary table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Club</th>
+                    <th scope="col">Points</th>
+                    <th scope="col">Match joués</th>
+                    <th scope="col">Victoire</th>
+                    <th scope="col">Nul</th>
+                    <th scope="col">Défaite</th>
+                    <th scope="col">But</th>
+                    
+
+                </tr>
+            </thead>
+            <tbody class="tbody-light">
+            <ng-container  *ngFor="let classement of listClassement, let i = index" >
+                <tr scope ="row">
+                    <th >{{i+1}} </th>
+                    <td>{{classement.nomClub}}</td>
+                    <td>{{classement.points}} </td>
+                    <td>{{classement.matchJoue }} </td>
+                    <td>{{classement.victoire }} </td>
+                    <td>{{classement.nul }} </td>
+                    <td>{{classement.defaite }} </td>
+                    <td>{{classement.diffBut}} </td>
+
+                   
+                </tr>
+            </ng-container>
+        </tbody>
+        </table>
+    </div>
+</div>

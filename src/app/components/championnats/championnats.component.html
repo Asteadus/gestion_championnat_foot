@@ -1,26 +1,31 @@
 
 <div >
-    <table>
-        <h3>Liste des championnats</h3>
-            <tr>
-                <th>Nom</th>
-                <th>Pays</th>
-                <th>Saison</th>
-                <th>Nombre d'équipes max</th>
-                <th>Détails du championnat</th>
-
-            </tr>
-        
-            <ng-container  *ngFor="let championnat of listChampionnats" >
+    <h3>Liste des championnats</h3>
+    <div class="table-responsive">
+    <table class="table table-striped table-primary table-hover">
+            <thead class="thead-dark">
                 <tr>
-                    <td>{{championnat.nom }} </td>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Pays</th>
+                    <th scope="col">Saison</th>
+                    <th scope="col">Nombre d'équipes max</th>
+                    <th scope="col">Détails du championnat</th>
+
+                </tr>
+            </thead>
+            <tbody class="tbody-light">
+            <ng-container  *ngFor="let championnat of listChampionnats" >
+                <tr scope ="row">
+                    <th >{{championnat.nom }} </th>
                     <td>{{championnat.pays }} </td>
                     <td>{{championnat.saison }} </td>
                     <td>{{championnat.nbEquipes }} </td>
-                    <td><button (click)="onDetails(championnat)" >Voir détails</button></td>
+                    <td><button class="btn btn-info" (click)="onDetails(championnat)" >Voir classement</button></td>
 
                    
                 </tr>
             </ng-container>
+        </tbody>
         </table>
+    </div>
 </div>

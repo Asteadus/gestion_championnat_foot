@@ -1,7 +1,42 @@
 
-<h3>Rencontres</h3>
+<h3>Liste des journées</h3>
 
-<ul *ngFor="let journee of listJournees">
+<div class="row">
+    <div class="col-6">
+        <ng-container  *ngFor="let journee of listJournees">
+            <h4>Journée {{ journee.numero}}</h4>
+            <div class="table-responsive">
+                <table class="table table-striped table-primary table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Date </th>
+                            <th scope="col">Équipes domicile</th>
+                            <th scope="col"></th>
+                            <th scope="col">Équipes visiteuse</th>
+                            <th scope="col">Modifier</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody-light">
+                        <tr *ngFor="let rencontre of journee.rencontres" scope ="row">
+                            <td>{{rencontre.date}}</td>
+                            <td class="text-right">{{rencontre.clubDomicile.nom}}</td>
+                            <td><span id="score">{{rencontre.scoreDomicile}} : {{rencontre.scoreVisiteur}}</span></td>
+                            <td>{{rencontre.clubVisiteur.nom}}</td>
+                            <td><button class="btn btn-primary" routerLink="/journees/update/{{rencontre.id}}">Modifier</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+            </ng-container>
+        </div>
+    <div class="col-5">
+        <router-outlet></router-outlet>
+       
+    </div>
 
-    
-</ul>
+   
+</div>
+
+
+
+

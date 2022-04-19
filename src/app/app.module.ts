@@ -22,6 +22,9 @@ import { JourneesComponent } from './components/journees/journees.component';
 import { GetOneRencontreComponent } from './components/rencontres/get-one-rencontre/get-one-rencontre.component';
 import { UpdateRencontreComponent } from './components/rencontres/update-rencontre/update-rencontre.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { AccueilComponent } from './components/accueil/accueil.component';
+import { ClassementComponent } from './components/classement/classement.component';
+import { GetOneClassementComponent } from './components/classement/get-one-classement/get-one-classement.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     JourneesComponent,
     GetOneRencontreComponent,
     UpdateRencontreComponent,
+    AccueilComponent,
+    ClassementComponent,
+    GetOneClassementComponent,
   ],
   imports: [
     BrowserModule,
