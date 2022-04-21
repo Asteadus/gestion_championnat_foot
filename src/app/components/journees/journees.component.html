@@ -1,7 +1,8 @@
 
-<h3>Liste des journées</h3>
+<h3 class="text-center">Liste des journées</h3>
 
 <div class="row">
+    <div *ngIf="!isConnected()" class="col-3"></div>
     <div class="col-6">
         <ng-container  *ngFor="let journee of listJournees">
             <h4>Journée {{ journee.numero}}</h4>
@@ -10,26 +11,26 @@
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">Date </th>
-                            <th scope="col">Équipes domicile</th>
+                            <th scope="col" class="text-right">Équipes domicile</th>
                             <th scope="col"></th>
                             <th scope="col">Équipes visiteuse</th>
-                            <th scope="col">Modifier</th>
+                            <th  *ngIf="isConnected()" scope="col">Modifier</th>
                         </tr>
                     </thead>
                     <tbody class="tbody-light">
                         <tr *ngFor="let rencontre of journee.rencontres" scope ="row">
-                            <td>{{rencontre.date}}</td>
+                            <td>{{rencontre.date | date:'medium'}}</td>
                             <td class="text-right">{{rencontre.clubDomicile.nom}}</td>
                             <td><span id="score">{{rencontre.scoreDomicile}} : {{rencontre.scoreVisiteur}}</span></td>
                             <td>{{rencontre.clubVisiteur.nom}}</td>
-                            <td><button class="btn btn-primary" routerLink="/journees/update/{{rencontre.id}}">Modifier</button></td>
+                            <td *ngIf="isConnected()"><button class="btn btn-primary" routerLink="/journees/update/{{rencontre.id}}">Modifier</button></td>
                         </tr>
                     </tbody>
                 </table>
              </div>
             </ng-container>
         </div>
-    <div class="col-5">
+    <div class="col-5" *ngIf="isConnected()">
         <router-outlet></router-outlet>
        
     </div>

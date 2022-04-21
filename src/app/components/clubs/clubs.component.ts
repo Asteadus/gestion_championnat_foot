@@ -32,7 +32,7 @@ export class ClubsComponent implements OnInit {
       next :club =>{
         this.listClub = club
       },
-      error : err => alert("echec"),
+      error : err => this.router.navigateByUrl("/clubs"),
       complete: () => console.log("complete")
     })
   }

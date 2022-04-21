@@ -1,4 +1,5 @@
 import { Championnat } from "./championnat.model";
+import { Rencontre } from "./rencontre.model";
 
 export interface Club {
     id?: number,
@@ -7,5 +8,7 @@ export interface Club {
     nomPresident: string,
     nomStade: string,
     dateCreation: Date,
-    championnat: Championnat
+    championnat: Championnat,
+    rencontresDomicile : Rencontre[],
+    rencontresVisiteur : Rencontre[]
 }

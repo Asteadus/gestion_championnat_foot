@@ -4,22 +4,56 @@
     </div>
 </ng-template>
 <div *ngIf="club; else loading">
-    <h3>Détail du club d'id: {{club.id}}</h3>
-    <dl>
-        <dt>Nom du club</dt>
-        <dd>{{club.nom}}</dd>
-        <dt>Pays</dt>
-        <dd>{{club.pays}}</dd>
-        <dt>Nom président</dt>
-        <dd>{{club.nomPresident}}</dd>
-        <dt>Nom du stade</dt>
-        <dd>{{club.nomStade}}</dd>
-        <dt>Date de création</dt>
-        <dd>{{club.dateCreation}}</dd>
     
-    </dl>
+    
+    <div class="text-center">
+        <h2 class=" mt-3">{{club.nom}}</h2>
+        <img src="'../../../assets/images/{{club.nom}}.png">
+    
 
+    
+    <div class="row">
+        <div class="col-sm-5"></div>
+        <div class="card bg-primary mb-5 text-center col-sm-2 mt-5" >
+            <div class="card-body">
+            <h5 class="card-title">Club</h5>
+
+            <p class="card-text">Pays: {{club.pays}}</p>
+            <p class="card-text">Stade: {{club.nomStade}}</p>
+            <p class="card-text">Date de création: {{club.dateCreation | date:'shortDate'}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-5"></div>
+    
+    <div class="row rencontre border-primary">
+        <div class="col-1"></div>
+        <div class="col-5 mt-3">
+            <h3>Rencontres à domicile: </h3>
+        
+            <ul *ngFor="let rencontre of club.rencontresDomicile" >
+                <li> 
+                    {{rencontre.clubDomicile.nom}} {{rencontre.scoreDomicile}} - 
+                    {{rencontre.scoreVisiteur}} {{rencontre.clubVisiteur.nom}} :
+                    {{rencontre.date | date:'medium'}} 
+                </li>
+            </ul>
+        </div>
+        
+        <div class="col-5 mt-3">
+            <h3>Rencontres à l'extérieur: </h3>
+            <ul *ngFor="let rencontre of club.rencontresVisiteur" >
+                <li> 
+                    {{rencontre.clubDomicile.nom}} {{rencontre.scoreDomicile}} - 
+                    {{rencontre.scoreVisiteur}} {{rencontre.clubVisiteur.nom}} :
+                    {{rencontre.date | date:'medium'}} 
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
-<h3>Rencontres: </h3>
+
+
+
 

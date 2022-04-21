@@ -23,7 +23,7 @@ export class GetOneClassementComponent implements OnInit {
         next : (classement)=>{
           console.log(classement),
           this.listClassement = classement},
-        error: (err) => router.navigateByUrl("/")
+        error: (err) => router.navigateByUrl("/championnats")
       });
    }
 

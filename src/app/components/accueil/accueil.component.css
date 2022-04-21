@@ -121,253 +121,253 @@ body{
       right: 5%;
     }
     
-    .gk{
-      content: url("../../../assets/images/anderlecht_logo.png");
+    .p1{
+      content: "";
       position: absolute;
       top: 48%;
       left: 2%;
       display: block;
       width: 5%;
       height: 8,5%;
-      background-color: #4F7EDC;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .lb{
+    .p2{
       content: "";
       position: absolute;
       top: 10%;
       left: 14%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .cb{
+    .p3{
       content: "";
       position: absolute;
       top: 48%;
       left: 14%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .rb{
+    .p4{
       content: "";
       position: absolute;
       top: 85%;
       left: 14%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .lwb{
+    .p5{
       content: "";
       position: absolute;
       top: 10%;
       left: 30%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .dm{
+    .p6{
       content: "";
       position: absolute;
       top: 48%;
       left: 30%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .rwb{
+    .p7{
       content: "";
       position: absolute;
       top: 85%;
       left: 30%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .lm{
+    .p8{
       content: "";
       position: absolute;
       top: 10%;
       left: 49%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .cm{
+    .p9{
       content: "";
       position: absolute;
       top: 48%;
       left: 49%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .rm{
+    .p10{
       content: "";
       position: absolute;
       top: 85%;
       left: 49%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .amr{
+    .p11{
       content: "";
       position: absolute;
       top: 10%;
       left: 67%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .am{
+    .p12{
       content: "";
       position: absolute;
       top: 48%;
       left: 67%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .aml{
+    .p13{
       content: "";
       position: absolute;
       top: 85%;
       left: 67%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .wl{
+    .p14{
       content: "";
       position: absolute;
       top: 10%;
       left: 83%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .cf{
+    .p15{
       content: "";
       position: absolute;
       top: 48%;
       left: 83%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .wr{
+    .p16{
       content: "";
       position: absolute;
       top: 85%;
       left: 83%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
     
-    .st{
+    .p17{
       content: "";
       position: absolute;
       top: 27%;
       left: 90%;
       display: block;
-      width: 3%;
-      height: 5%;
-      background-color: #4F7EDC;
+      width: 5%;
+      height: 8,5%;
+      background-color: #FFF;
       border: 1px solid #324978;
       border-radius: 50%;
       z-index: 2;
     }
 
-    .st2{
+    .p18{
         content: "";
         position: absolute;
         top: 69%;
         left: 90%;
         display: block;
-        width: 3%;
-        height: 5%;
-        background-color: #4F7EDC;
+        width: 5%;
+        height: 8,5%;
+        background-color: #FFF;
         border: 1px solid #324978;
         border-radius: 50%;
         z-index: 2;

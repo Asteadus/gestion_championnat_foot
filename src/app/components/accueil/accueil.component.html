@@ -12,28 +12,30 @@
          <div class="divisoria"></div>
          <div class="interior"></div>
          <div class="penalty"></div>     
-         <a href="club/2">      
-         <div class="gk" style="content:url('../../../assets/images/anderlecht_logo.png')">
+         <ng-container  *ngFor="let club of listClub, let i = index" >
+         <a href="club/{{club.id}}">      
+         <div class="p{{i+1}}" style="content:url('../../../assets/images/{{club.nom}}.png')">
              
          </div>
         </a>
-         <div class="cb"></div>
-         <div class="lb"></div>
-         <div class="rb"></div>
-         <div class="lwb"></div>
-         <div class="dm"></div>
-         <div class="rwb"></div>
-         <div class="lm"></div>
-         <div class="cm"></div>
-         <div class="rm"></div>
-         <div class="amr"></div>
-         <div class="am"></div>
-         <div class="aml"></div>
-         <div class="wl"></div>
-         <div class="cf"></div>
-         <div class="wr"></div>
-         <div class="st"></div>
-         <div class="st2"></div>
+        <!--  <div class="p2"></div>
+         <div class="p3"></div>
+         <div class="p4"></div>
+         <div class="p5"></div>
+         <div class="p6"></div>
+         <div class="p7"></div>
+         <div class="p8"></div>
+         <div class="p9"></div>
+         <div class="p10"></div>
+         <div class="p11"></div>
+         <div class="p12"></div>
+         <div class="p13"></div>
+         <div class="p14"></div>
+         <div class="p15"></div>
+         <div class="p16"></div>
+         <div class="p17"></div>
+         <div class="p18"></div> -->
+     </ng-container>
       </div>
      </div>
      

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConnexionService } from 'src/app/services/connexion.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private connexionService: ConnexionService) {
+    connexionService.$connected.subscribe(() => this.isConnected);
+   }
 
   ngOnInit(): void {
+  }
+
+  isConnected(){
+    return this.connexionService.isConnected;
   }
 
 }

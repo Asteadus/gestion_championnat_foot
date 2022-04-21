@@ -1,0 +1,23 @@
+   
+<h1>Bonjour</h1>
+
+<div>
+    <ng-template #welcomeMessage>
+        <p>Bonjour user</p>
+    </ng-template>
+    <form [formGroup]="connexionForm" (ngSubmit)="onSubmit()" *ngIf="!isConnected(); else welcomeMessage">
+
+        <div>
+            <label for="connect-user">username</label><br>
+            <input type="text" id="connect-user" formControlName="username">
+        </div>
+
+        <div>
+            <label for="connect-pass">password</label><br>
+            <input type="text" id="connect-pass" formControlName="password">
+        </div>
+
+        <button type="submit">envoyer</button>
+
+    </form>
+</div>

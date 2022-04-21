@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { catchError } from 'rxjs';
 import { Club } from '../models/club.model';
 
 @Injectable({
@@ -18,6 +19,6 @@ export class ClubService {
   }
   getClub(id : number){
     return this.client.get<Club>(this.BASE_URL + "/"+id)
-
+    
   }
 }

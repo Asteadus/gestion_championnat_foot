@@ -1,0 +1,13 @@
+img{
+    width: 10%;
+}
+.rencontre{
+    border-top: solid 3px;
+}
+.test{
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style-position: inside;
+}

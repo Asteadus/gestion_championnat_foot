@@ -11,20 +11,18 @@ import { ChampionnatsComponent } from './components/championnats/championnats.co
 import { GetOneChampionnatComponent } from './components/championnats/get-one-championnat/get-one-championnat.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatMenuModule} from '@angular/material/menu';
-import { MatListModule } from '@angular/material/list';
-import {MatButtonModule} from '@angular/material/button';
-import {MatTableModule} from '@angular/material/table';
 import { RencontresComponent } from './components/rencontres/rencontres.component';
 import { JourneesComponent } from './components/journees/journees.component';
 import { GetOneRencontreComponent } from './components/rencontres/get-one-rencontre/get-one-rencontre.component';
 import { UpdateRencontreComponent } from './components/rencontres/update-rencontre/update-rencontre.component';
-import {MatGridListModule} from '@angular/material/grid-list';
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { ClassementComponent } from './components/classement/classement.component';
 import { GetOneClassementComponent } from './components/classement/get-one-classement/get-one-classement.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { registerLocaleData } from '@angular/common';
+import { LOCALE_ID } from '@angular/core';
+import localeFr from '@angular/common/locales/fr';
+registerLocaleData(localeFr, 'fr');
 
 @NgModule({
   declarations: [
@@ -41,6 +39,7 @@ import { GetOneClassementComponent } from './components/classement/get-one-class
     AccueilComponent,
     ClassementComponent,
     GetOneClassementComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,16 +48,9 @@ import { GetOneClassementComponent } from './components/classement/get-one-class
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatSliderModule,
-    MatToolbarModule,
-    MatMenuModule,
-    MatListModule,
-    MatButtonModule,
-    MatTableModule,
-    MatGridListModule
-    
   ],
-  providers: [],
+  providers: [
+    {provide: LOCALE_ID, useValue: 'fr' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

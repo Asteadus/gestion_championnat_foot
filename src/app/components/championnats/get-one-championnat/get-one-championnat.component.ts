@@ -22,7 +22,7 @@ export class GetOneChampionnatComponent implements OnInit {
       service.getChampionnat(this.id).subscribe({
 
         next : (championnat)=>this.championnat = championnat,
-        error: (err) => router.navigateByUrl("/")
+        error: (err) => router.navigateByUrl("/championnats")
       });
    }
 
